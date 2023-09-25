@@ -8,7 +8,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    @foreach ($navLinks['headerList'] as $item)
+                    @foreach ($navlinks['headerList'] as $item)
                         <li class="nav-item">
                             <a class="nav-link text-uppercase active" aria-current="page"
                                 href="#">{{ $item['name'] }}</a>
@@ -41,12 +41,3 @@
     </div>
 
 </header>
-
-
-
-
-{{-- @foreach ($navLinks['headerList'] as $item)
-    <li class="nav-item">
-        <a class="nav-link text-uppercase" href="#"> {{ $item['name'] }} </a>
-    </li>
-@endforeach --}}

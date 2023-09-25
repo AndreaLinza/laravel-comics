@@ -17,6 +17,7 @@
     @include("partials.firstContent")
     @include("partials.cardContent")
     @include("partials.blueBanner")
+    @include("partials.footer")
 
 
     @yield('content')
