@@ -1,7 +1,7 @@
 <header>
     <div class="container">
         <nav class="navbar bg-transparent navbar-expand-lg">
-            <a class="navbar-brand" href="#"><img src="/images/dc-logo.png" alt="DC"></a>
+            <a class="navbar-brand" href="/"><img src="/images/dc-logo.png" alt="DC"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -11,12 +11,12 @@
                     @foreach ($navlinks['headerList'] as $item)
                         <li class="nav-item">
                             <a class="nav-link text-uppercase active" aria-current="page"
-                                href="#">{{ $item['name'] }}</a>
+                                href="/{{$item['link']}}">{{ $item['name'] }}</a>
                         </li>
                     @endforeach
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase" href="#" role="button"
+                        <a class="nav-link dropdown-toggle text-uppercase" href="/Shop" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             shop
                         </a>

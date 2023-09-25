@@ -3,39 +3,39 @@ return [
     'headerList' => [
         [
             'name' => 'Characters',
-            'link' => '#',
+            'link' => 'Characters',
         ],
         [
             'name' => 'Comics',
-            'link' => '#',
+            'link' => 'Comics',
         ],
         [
             'name' => 'Movies',
-            'link' => '#',
+            'link' => 'Movies',
         ],
         [
             'name' => 'Tv',
-            'link' => '#',
+            'link' => 'Tv',
         ],
         [
             'name' => 'Games',
-            'link' => '#',
+            'link' => 'Games',
         ],
         [
             'name' => 'Collectibles',
-            'link' => '#',
+            'link' => 'Collectibles',
         ],
         [
             'name' => 'Video',
-            'link' => '#',
+            'link' => 'Video',
         ],
         [
             'name' => 'Fans',
-            'link' => '#',
+            'link' => 'Fans',
         ],
         [
             'name' => 'News',
-            'link' => '#',
+            'link' => 'News',
         ],
     ],
 ];

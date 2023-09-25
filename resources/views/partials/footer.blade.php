@@ -50,7 +50,7 @@ $footerList = [
     <div class="container">
         <div class="d-flex flex-column flex-wrap w-25 pt-4 position-relative">
             @foreach ($footerList as $singleEl)
-                <div class="pe-5">
+                <div class="py-2 pe-5">
                     <h3 class="title">{{ $singleEl['title'] }}</h3>
                     <ul class="me-auto mb-2 mb-lg-0 list-unstyled text-white pb-3">
 

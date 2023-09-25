@@ -1,70 +1,47 @@
 @php
-    // bannerList: [
-            //     {
-
-            //         imgBanner: [
-            //             'buy-comics-digital-comics.',
-            //             'buy-comics-merchandise.',
-            //             'buy-comics-subscriptions.',
-            //             'buy-comics-shop-locator.',
-            //             'buy-dc-power-visa.',
-            //         ],
-            //         titleBanner: [
-                        
-            //             'digital comics',
-            //             'dc merchandise',
-            //             'subscription',
-            //             'comic shop locator',
-            //             'dc power visa',
-            //         ]
-                    
-                    
-            //     }
-            // ]
+    $bannerLists = [
+        [
+            'id' => 'DigitalComics',
+            'img' => '/images/buy-comics-digital-comics.png',
+            'title' => 'digital comics',
+        ],
+        [
+            'id' => 'DcMerchandise',
+            'img' => '/images/buy-comics-merchandise.png',
+            'title' => 'dc merchandise',
+        ],
+        [
+            'id'=> 'Subscription',
+            'img' => '/images/buy-comics-subscriptions.png',
+            'title' => 'subscription',
+        ],
+        [
+            'id' => 'ComicShopLocator',
+            'img' => '/images/buy-comics-shop-locator.png',
+            'title' => 'comic shop locator',
+        ],
+        [
+            'id' => 'DcPowerVisa',
+            'img' => '/images/buy-dc-power-visa.svg',
+            'title' => 'dc power visa',
+        ],
+    ];
 @endphp
 
 <section class="blue-banner">
 
     <div class="container">
         <div class="banner-main z-1">
-            <div>
-                <a class="d-flex align-items-center" href="#">
-                    <img src="/images/buy-comics-digital-comics.png" alt="">
-                    <span>digital comics</span>
-                </a>
-            </div>
-            <div>
-                <a class="d-flex align-items-center" href="#">
 
-                    <img src="/images/buy-comics-merchandise.png" alt="dc-merchandise">
-                    <span>dc merchandise</span>
-                </a>
-
-            </div>
-            <div>
-                <a class="d-flex align-items-center" href="#">
-
-                    <img src="/images/buy-comics-subscriptions.png" alt="subscription">
-                    <span>subscription</span>
-                </a>
-
-            </div>
-            <div>
-                <a class="d-flex align-items-center" href="#">
-
-                    <img src="/images/buy-comics-shop-locator.png" alt="comic-shop">
-                    <span>comic shop locator</span>
-                </a>
-
-            </div>
-            <div>
-                <a class="d-flex align-items-center" href="#">
-
-                    <img src="/images/buy-dc-power-visa.svg" alt="dc-power" style="height: 50px;">
-                    <span>dc power visa</span>
-                </a>
-
-            </div>
+            @foreach ($bannerLists as $banner)
+                <div>
+                    <a class="d-flex align-items-center" href="/{{$banner['id']}}">
+                        <img src="{{ $banner['img'] }}" alt="">
+                        <span>{{ $banner['title'] }}</span>
+                    </a>
+                </div>
+            @endforeach
+            
         </div>
 
     </div>
