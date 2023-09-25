@@ -35,7 +35,7 @@
 
             @foreach ($bannerLists as $banner)
                 <div>
-                    <a class="d-flex align-items-center" href="/{{$banner['id']}}">
+                    <a class="d-flex align-items-center text-decoration-none" href="/{{$banner['id']}}">
                         <img src="{{ $banner['img'] }}" alt="">
                         <span>{{ $banner['title'] }}</span>
                     </a>

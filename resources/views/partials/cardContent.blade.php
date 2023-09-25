@@ -6,7 +6,7 @@
                     <div class="card">
                         <div class="img-container">
                             <img src="{{ $singleComic['thumb'] }}" alt="pic">
-                            <a href="#" class="hover text-center text-white text-decoration-none">
+                            <a href="/{{$singleComic['id']}}" class="hover text-center text-white text-decoration-none">
                                 <h5 class="pt-3 px-2"> {{$singleComic['series']}} </h5>
                                 <p class="position-absolute start-50 bottom-0 translate-middle pb-3"> {{$singleComic['price']}} </p>
                             </a>

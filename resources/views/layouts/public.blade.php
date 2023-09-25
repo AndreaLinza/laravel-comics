@@ -13,10 +13,22 @@
 </head>
 <body>
 
+    
     @include("partials.header")
     @include("partials.firstContent")
-    @include("partials.cardContent")
-    @include("partials.blueBanner")
+    
+    @yield('homeContent')
+    @yield('comicContent')
+    @yield('charactersContent')
+    @yield('moviesContent')
+    @yield('tvContent')
+    @yield('gamesContent')
+    @yield('collectiblesContent')
+    @yield('videoContent')
+    @yield('fansContent')
+    @yield('newsContent')
+    @yield('shopContent')
+    
     @include("partials.footer")
 
 
