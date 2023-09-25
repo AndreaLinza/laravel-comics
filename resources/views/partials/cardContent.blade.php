@@ -1,10 +1,16 @@
 <section>
     <div class="container">
-        <div class="row row-cols-lg-6 align-items-center">
+        <div class="row row-cols-lg-6 row-cols-md-3 g-3">
             @foreach ($comics as $singleComic)
                 <div class="col">
                     <div class="card">
-                        <img src="{{ $singleComic['thumb'] }}" alt="...">
+                        <div class="img-container">
+                            <img src="{{ $singleComic['thumb'] }}" alt="pic">
+                            <div class="hover text-center">
+                                <h5 class="pt-3 px-2"> {{$singleComic['series']}} </h5>
+                                <p class="position-absolute start-50 bottom-0 translate-middle pb-3"> {{$singleComic['price']}} </p>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <p class="card-text"> {{ $singleComic['title'] }} </p>
                         </div>
