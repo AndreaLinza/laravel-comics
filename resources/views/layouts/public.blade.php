@@ -15,6 +15,7 @@
 
     
     @include("partials.header")
+    @include('partials.pagesCard')
 
     
     @yield('homeContent')
@@ -28,7 +29,6 @@
     @yield('fansContent')
     @yield('newsContent')
     @yield('shopContent')
-    @include('partials.pagesCard')
     
     
     @include("partials.footer")

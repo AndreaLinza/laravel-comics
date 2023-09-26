@@ -10,9 +10,10 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     @foreach ($navlinks['headerList'] as $item)
                         <li class="nav-item">
-                            <a class="nav-link text-uppercase active" aria-current="page"
+                            <a class="nav-link text-uppercase" aria-current="page"
                                 href="/{{$item['link']}}">{{ $item['name'] }}</a>
-                        </li>
+                                {{-- class="{{ Request::route()->getName() === 'homepage' ? 'active' : ''  --}}
+                            </li>
                     @endforeach
 
                     <li class="nav-item dropdown">

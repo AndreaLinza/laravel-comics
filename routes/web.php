@@ -54,10 +54,21 @@ Route::get('/News', function () {
     return view('news', ["navlinks" => config("navlinks")], ["comicsList" => config("comicsList")]); //["footerlinks" => config("footerlinks")]);
 })->name("news");
 
-
 Route::get('/Shop', function () {
     return view('shop', ["navlinks" => config("navlinks")], ["comicsList" => config("comicsList")]); //["footerlinks" => config("footerlinks")]);
 })->name("shop");
+
+Route::get('/ActionComics', function () {
+    return view('partialsCard.actionComics', ["navlinks" => config("navlinks")], ["comicsList" => config("comicsList")]); //["footerlinks" => config("footerlinks")]);
+})->name("actionComics");
+
+Route::get('/AmericanVampire1976', function () {
+    return view('partialsCard.americanVampire', ["navlinks" => config("navlinks")], ["comicsList" => config("comicsList")]); //["footerlinks" => config("footerlinks")]);
+})->name("americanVampire");
+
+Route::get('/Aquaman', function () {
+    return view('partialsCard.aquaman', ["navlinks" => config("navlinks")], ["comicsList" => config("comicsList")]); //["footerlinks" => config("footerlinks")]);
+})->name("aquaman");
 
 
 
