@@ -1,7 +1,7 @@
 <section>
     <div class="container">
         <div class="row row-cols-lg-6 row-cols-md-3 g-3">
-            @foreach ($comics as $singleComic)
+            @foreach ($comicsList as $singleComic)
                 <div class="col">
                     <div class="card">
                         <div class="img-container">

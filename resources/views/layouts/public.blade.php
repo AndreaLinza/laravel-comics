@@ -15,7 +15,7 @@
 
     
     @include("partials.header")
-    @include("partials.firstContent")
+
     
     @yield('homeContent')
     @yield('comicContent')
@@ -28,9 +28,11 @@
     @yield('fansContent')
     @yield('newsContent')
     @yield('shopContent')
+    @include('partials.pagesCard')
+    
     
     @include("partials.footer")
-
+    
 
     
 </body>

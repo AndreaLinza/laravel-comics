@@ -4,8 +4,11 @@
 @section('title', 'Comics')
 
 @section('comicContent')
+@include("partials.firstContent")
 
-<h1>caskna</h1>
+@include('partials.cardContent')
+@include('partials.blueBanner')
+
 
 @endsection
 
