@@ -3,7 +3,7 @@
 
 @section('title', 'Movies')
 
-@section('moviesContent')
+@section('content')
 @include("partials.firstContent")
 
 <h1>scascascas</h1>

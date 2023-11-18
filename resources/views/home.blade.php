@@ -3,7 +3,7 @@
 @section('title','DC Comics - Homepage')
 
 
-@section('homeContent')
+@section('content')
 
     @include('partials.firstContent')
     @include('partials.cardContent')

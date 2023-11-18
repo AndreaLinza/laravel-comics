@@ -3,7 +3,7 @@
 
 @section('title', 'Comics')
 
-@section('comicContent')
+@section('content')
 @include("partials.firstContent")
 
 @include('partials.cardContent')

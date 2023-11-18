@@ -3,7 +3,7 @@
 
 @section('title', 'Collectibles')
 
-@section('collectiblesContent')
+@section('content')
 @include("partials.firstContent")
 
 <h1>jcbhjkasbkcj</h1>

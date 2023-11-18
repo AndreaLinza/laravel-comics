@@ -5,7 +5,7 @@
 
 
 
-@section('aquamanContent')
+@section('content')
     <section class="first-section">
         <div class="jumbo position-relative">
 
